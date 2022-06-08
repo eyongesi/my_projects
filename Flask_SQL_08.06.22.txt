@@ -1,0 +1,29 @@
+Hi Guys. Before coming to our portfolio session, please run these commands on your local
+## For SQLITE (Serverless)
+pip3 install flask-mysql
+pip3 install sqlalchemy
+pip3 install Flask-SQLAlchemy
+
+SQLALCHEMY_DATABASE_URI
+
+The database URI that should be used for the connection. Examples:
+
+sqlite:////tmp/test.db
+
+mysql://username:password@server/db
+
+## For MySQL
+For MySQL part, launch RDS in AWS, and select Free-tier
+username and password must mnatch with code. I change admin to eyongesi
+
+app.config['MYSQL_DATABASE_USER'] = 'eyongesi'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'eyongesi01'
+
+make public, and disable storage autoscaling as it's free tier.
+Port must match
+app.config['MYSQL_DATABASE_DB'] = 'clarusway' 
+Db name
+
+Deletion protection
+
+Enable deletion protection, enable in production environment

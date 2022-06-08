@@ -27,3 +27,27 @@ Db name
 Deletion protection
 
 Enable deletion protection, enable in production environment
+
+# Add a statement to run the Flask application which can be reached from any host on port 80.
+if __name__ == '__main__':
+   app.run(debug=True)
+   app.run(host='0.0.0.0', port=80)
+
+app.config['MYSQL_DATABASE_HOST'] = 'PLEASE WRITE YOUR DATABASE ENDPOINT HERE'
+
+app.config['MYSQL_DATABASE_HOST'] = 'mysqldbdemo.cxdqcpfsf2cu.us-east-1.rds.amazonaws.com'
+
+sudo yum update -y
+sudo yum install python3 -y
+sudo pip3 install flask
+pip3 list
+sudo yum install git -y
+wget https://raw.githubusercontent.com/eyongesi/my_projects/main/flask-05-Handling-SQL-with-Flask-Web-Application/app-with-mysql.py
+wget 
+mkdir templates && cd templates
+wget https://raw.githubusercontent.com/eyongesi/my_projects/main/flask-05-Handling-SQL-with-Flask-Web-Application/templates/add-email.html
+wget https://raw.githubusercontent.com/eyongesi/my_projects/main/flask-05-Handling-SQL-with-Flask-Web-Application/templates/emails.html
+
+
+
+

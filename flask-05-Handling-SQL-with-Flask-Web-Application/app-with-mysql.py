@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Configure mysql database
 app.config['MYSQL_DATABASE_HOST'] = 'PLEASE WRITE YOUR DATABASE ENDPOINT HERE'
-app.config['MYSQL_DATABASE_USER'] = 'admin'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Clarusway_1'
+app.config['MYSQL_DATABASE_USER'] = 'eyongesi'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'eyongesi01'
 app.config['MYSQL_DATABASE_DB'] = 'clarusway'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql = MySQL()
@@ -108,4 +108,4 @@ def add_email():
 # Add a statement to run the Flask application which can be reached from any host on port 80.
 if __name__ == '__main__':
    app.run(debug=True)
-   # app.run(host='0.0.0.0', port=80)
+   app.run(host='0.0.0.0', port=80)
